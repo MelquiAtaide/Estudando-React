@@ -1,25 +1,30 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Header from './components/header';
+import { useState } from 'react';
+import User from './components/User';
+import Form from './components/Form';
+import Footer from './components/Footer';
 
-function App() {
+function App () {
+
+  const [user, setUser ] = useState({
+    id:1,
+    name: 'Melquisedeque',
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div>
+        <Header />
+      </div>
+      <div>
+        <User />
+        <Form />
+        <Footer tel='(82) 9 3286-4444' email='empresa@gmail.com' insta='@empresa' linkedin='empresaLTDA'/>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
