@@ -1,5 +1,6 @@
 import React from 'react';
 import './form.css';
+import { Button } from 'reactstrap';
 
 function Form() {
     return (
@@ -16,7 +17,8 @@ function Form() {
                 <input type="text" name="edereco" />
                 <label for="data-nasci">Data de nascimento*</label>
                 <input type="date" name="data-nasci" />
-                <button className='bnt' type='submit'>Salvar</button>
+                <br/>
+                <Button type="submit" color="primary">Salvar</Button>
             </form>
         </form>
     );
