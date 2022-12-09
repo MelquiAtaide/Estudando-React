@@ -1,0 +1,20 @@
+import React from 'react';
+import { Card } from 'reactstrap';
+
+function Card() {
+    return (
+        <div>
+            <Card border="primary" style={{ width: '18rem' }}>
+                <Card.Header>Aviso</Card.Header>
+                <Card.Body>
+                    <Card.Title>Possiveis instabilidades</Card.Title>
+                    <Card.Text>
+                        Devido a algumas interferências pode ocorrer instabilidades no momento de listar os dados da API. solução: refresh da página.
+                    </Card.Text>
+                </Card.Body>
+            </Card>
+        </div>
+    );
+}
+
+export default Card;

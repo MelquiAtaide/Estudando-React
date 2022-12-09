@@ -3,6 +3,10 @@ body {
     margin: 0;
 }
 
+footer {
+    margin-top: 50px;
+}
+
 .footer {
     width: 100%;
     display: flex;
